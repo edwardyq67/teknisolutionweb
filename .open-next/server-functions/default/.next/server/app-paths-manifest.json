@@ -1,0 +1,18 @@
+{
+  "/Blog/[slug]/page": "app/Blog/[slug]/page.js",
+  "/Blog/page": "app/Blog/page.js",
+  "/Politicas/page": "app/Politicas/page.js",
+  "/Reclamaciones/page": "app/Reclamaciones/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/blog/route": "app/api/blog/route.js",
+  "/api/carrusel/route": "app/api/carrusel/route.js",
+  "/api/contacto/route": "app/api/contacto/route.js",
+  "/api/inicio/route": "app/api/inicio/route.js",
+  "/api/nosotros/route": "app/api/nosotros/route.js",
+  "/api/politicas/route": "app/api/politicas/route.js",
+  "/api/productos/route": "app/api/productos/route.js",
+  "/api/servicios/route": "app/api/servicios/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/servicios/[slug]/page": "app/servicios/[slug]/page.js"
+}
