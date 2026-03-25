@@ -291,6 +291,20 @@
     "configFileName": "next.config.ts",
     "turbopack": {
       "root": "C:\\Users\\edwar\\proyectos\\tsgroup\\teknisolutions"
+    },
+    "_originalRewrites": {
+      "beforeFiles": [],
+      "afterFiles": [
+        {
+          "source": "/api/contacto/send",
+          "destination": "https://email.teknis-developer.com/send_mail.php"
+        },
+        {
+          "source": "/api/reclamos/send",
+          "destination": "https://email.teknis-developer.com/send_reclamo.php"
+        }
+      ],
+      "fallback": []
     }
   },
   "appDir": "C:\\Users\\edwar\\proyectos\\tsgroup\\teknisolutions",
@@ -303,6 +317,8 @@
     ".next\\server\\functions-config-manifest.json",
     ".next\\server\\middleware-manifest.json",
     ".next\\server\\middleware-build-manifest.js",
+    ".next\\server\\middleware-react-loadable-manifest.js",
+    ".next\\react-loadable-manifest.json",
     ".next\\server\\app-paths-manifest.json",
     ".next\\app-path-routes-manifest.json",
     ".next\\app-build-manifest.json",

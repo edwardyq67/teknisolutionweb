@@ -15,7 +15,18 @@
   "headers": [],
   "rewrites": {
     "beforeFiles": [],
-    "afterFiles": [],
+    "afterFiles": [
+      {
+        "source": "/api/contacto/send",
+        "destination": "https://email.teknis-developer.com/send_mail.php",
+        "regex": "^/api/contacto/send(?:/)?$"
+      },
+      {
+        "source": "/api/reclamos/send",
+        "destination": "https://email.teknis-developer.com/send_reclamo.php",
+        "regex": "^/api/reclamos/send(?:/)?$"
+      }
+    ],
     "fallback": []
   },
   "dynamicRoutes": [

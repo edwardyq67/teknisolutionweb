@@ -1,18 +1,18 @@
 {
-  "/Blog/[slug]/page": "/Blog/[slug]",
-  "/Blog/page": "/Blog",
-  "/Politicas/page": "/Politicas",
-  "/Reclamaciones/page": "/Reclamaciones",
-  "/_not-found/page": "/_not-found",
   "/api/blog/route": "/api/blog",
-  "/api/carrusel/route": "/api/carrusel",
   "/api/contacto/route": "/api/contacto",
-  "/api/inicio/route": "/api/inicio",
+  "/api/carrusel/route": "/api/carrusel",
   "/api/nosotros/route": "/api/nosotros",
-  "/api/politicas/route": "/api/politicas",
   "/api/productos/route": "/api/productos",
+  "/api/inicio/route": "/api/inicio",
+  "/api/politicas/route": "/api/politicas",
   "/api/servicios/route": "/api/servicios",
   "/favicon.ico/route": "/favicon.ico",
+  "/_not-found/page": "/_not-found",
+  "/Reclamaciones/page": "/Reclamaciones",
   "/page": "/",
-  "/servicios/[slug]/page": "/servicios/[slug]"
+  "/Blog/page": "/Blog",
+  "/Politicas/page": "/Politicas",
+  "/servicios/[slug]/page": "/servicios/[slug]",
+  "/Blog/[slug]/page": "/Blog/[slug]"
 }

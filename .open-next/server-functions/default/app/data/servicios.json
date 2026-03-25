@@ -1,0 +1,195 @@
+{
+    "servicios": [
+        {
+            "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcodicionadoClimatizacion.webp",
+            "titulo": "Aire acondicionado a nivel (doméstico, comercial e industrial) y climatización",
+            "contenido": "Realizamos la instalación, mantenimiento y reparación de sistemas tipo Split, MultiSplit, Piso-Techo, Cassette, VRF/VRV y sistemas HVAC centralizados.",
+            "url": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcodicionadoClimatizacion.webp",
+            "slug": "aire-acondicionado-climatizacion",
+            "descripcion_larga": "En Teknisolutions, somos especialistas en ofrecer un servicio integral de climatización y ventilación en Lima, proporcionando la instalación de una amplia gama de equipos como Split Pared, Ducto, Cassette, VRF, Paquete (Rooftop) y Chillers, adaptados a las necesidades de viviendas, oficinas, locales comerciales e instalaciones industriales. Nuestra propuesta combina tecnología de vanguardia y equipos de alta eficiencia energética para garantizar ambientes frescos, máximo confort y ahorro operativo en cada proyecto.",
+            "icono": "mdi:snowflake",
+            "VentilacionClimatizacion": {
+                "titulo": "Ventilación y Climatización",
+                "img": "/Servicios/Ventilación y Climatización.webp",
+                "servicios": [
+                    {
+                        "nombre": "Extractores Axiales",
+                        "descripcion": "Suministramos e instalamos ventiladores axiales de placa, tubo axiales de uso industrial y minero.",
+                        "icono": "mdi:fan"
+                    },
+                    {
+                        "nombre": "Extractores Centrífugos",
+                        "descripcion": "Ofrecemos ventiladores de simple y doble aspiración, álabes hacia adelante y atrás.",
+                        "icono": "mdi:cog"
+                    },
+                    {
+                        "nombre": "Extractores Eólicos",
+                        "descripcion": "Suministramos equipos eólicos que no necesitan motor y por ende no tienen consumo eléctrico.",
+                        "icono": "mdi:wind-power"
+                    },
+                    {
+                        "nombre": "Mantenimiento",
+                        "descripcion": "Realizamos mantenimiento de equipos de ventilación, mantén tus ventiladores siempre en buenas condiciones.",
+                        "icono": "mdi:wrench"
+                    }
+                ]
+            },
+            "DomesticoComercial": [
+                {
+                    "titulo": "Aire Acondicionado residencial",
+                    "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/Servicio-de-aire-acondicionado-dom%C3%A9stico.webp",
+                    "descripcion_corta": "Brindamos servicio técnico especializado para equipos de aire acondicionado en hogares, departamentos y oficinas pequeñas, con un enfoque en la seguridad, eficiencia y confort de tu familia.",
+                    "servicios": [
+                        {
+                            "nombre": "Mantenimiento Preventivo",
+                            "descripcion": "Limpieza integral de la unidad interna y externa, desinfección de filtros, revisión de presión de gas, consumo eléctrico y estado de componentes para asegurar un funcionamiento óptimo y evitar futuras averías.",
+                            "icono": "mdi:check-circle"
+                        },
+                        {
+                            "nombre": "Reparación",
+                            "descripcion": "Diagnóstico preciso de fallas como falta de enfriamiento, ruidos anormales, fugas de agua o problemas eléctricos. Reemplazamos repuestos y recargamos gas refrigerante utilizando herramientas profesionales.",
+                            "icono": "mdi:wrench"
+                        },
+                        {
+                            "nombre": "Instalación",
+                            "descripcion": "Instalamos todo tipo de equipos split y portátiles, realizando el correcto montaje, vacío del sistema, configuración y pruebas de rendimiento para garantizar un clima agradable con el menor consumo energético.",
+                            "icono": "mdi:hammer-wrench"
+                        }
+                    ],
+                    "compromiso": "Nuestro compromiso es ofrecer una atención rápida, transparente y con garantía, para que disfrutes de un ambiente fresco y saludable durante todo el año."
+                }
+            ]
+        },
+        {
+            "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialEIndustrial.webp",
+            "titulo": "Refrigeración comercial e industrial",
+            "contenido": "En Teknisolutions, nos especializamos en soluciones integrales de refrigeración industrial y comercial, diseñando e implementando cámaras frigoríficas, túneles de enfriamiento y sistemas de congelamiento de alto rendimiento.",
+            "url": "/refrigeracion-comercial-industrial",
+            "slug": "refrigeracion-comercial-industrial",
+            "descripcion_larga": "En Teknisolutions, nos especializamos en soluciones integrales de refrigeración industrial y comercial, diseñando e implementando cámaras frigoríficas, túneles de enfriamiento y sistemas de congelamiento de alto rendimiento. Gracias a nuestra tecnología de vanguardia y un equipo de ingeniería experto, optimizamos la climatización de salas de procesos y la operación de plantas de hielo, garantizando sistemas eficientes, confiables y con un control térmico riguroso para la conservación y procesamiento de sus productos.",
+            "icono": "mdi:snowflake-thermometer"
+        },
+        {
+            "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/Asesoramiento.webp",
+            "titulo": "Consultoría de desarrollo y ejecución de proyecto",
+            "contenido": "Diseñamos y ejecutamos proyectos integrales de climatización, ventilación y refrigeración industrial a medida.",
+            "url": "/consultoria-desarrollo-ejecucion-proyecto",
+            "slug": "consultoria-desarrollo-ejecucion-proyecto",
+            "descripcion_larga": "En Teknisolutions, diseñamos y ejecutamos proyectos integrales de climatización, ventilación y refrigeración industrial a medida. Nuestro equipo de ingenieros especializados gestiona cada etapa del proceso, desde el cálculo de redes de ductos y selección de equipos hasta la implementación final, garantizando el cumplimiento normativo, la eficiencia energética y la puntualidad en cada entrega.",
+            "icono": "mdi:clipboard-check",
+            "secciones": [
+                {
+                    "titulo": "Soluciones Especializadas por Sector",
+                    "contenido": "Desarrollamos proyectos personalizados adaptados a las exigencias críticas de diversos entornos:",
+                    "items": [
+                        {
+                            "titulo": "Sector Salud y Hospitalario",
+                            "descripcion": "Sistemas de climatización con filtrado especial y control de presión para hospitales y clínicas."
+                        },
+                        {
+                            "titulo": "Industria Farmacéutica",
+                            "descripcion": "Diseño de almacenes especializados para medicamentos, cámaras de frío con monitoreo térmico y sistemas de climatización para laboratorios bajo estrictos estándares de bioseguridad."
+                        },
+                        {
+                            "titulo": "Industria Alimentaria",
+                            "descripcion": "Diseño de cámaras frigoríficas, cuartos fríos, túneles de congelamiento y climatización de salas de procesos."
+                        },
+                        {
+                            "titulo": "Corporativo y Comercial",
+                            "descripcion": "Soluciones de aire acondicionado para oficinas, edificios y restaurantes, optimizando el confort y el consumo eléctrico."
+                        },
+                        {
+                            "titulo": "Residencial",
+                            "descripcion": "Instalaciones de alta eficiencia para hogares modernos."
+                        }
+                    ]
+                }
+            ],
+            "VentilacionClimatizacion": {
+                "titulo": "Nuestro Portafolio de Servicios",
+                "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/Nuestro%20Portafolio%20de%20Servicios.webp",
+                "servicios": [
+                    {
+                        "nombre": "Sistemas HVAC",
+                        "descripcion": "Instalación de equipos Split (Pared, Ducto, Cassette), sistemas VRF, unidades Paquete (Rooftop), Chillers y Fan Coils.",
+                        "icono": "mdi:air-conditioner"
+                    },
+                    {
+                        "nombre": "Ventilación y Seguridad",
+                        "descripcion": "Diseño de sistemas de ventilación mecánica, extracción de monóxido y presurización de escaleras contra incendios.",
+                        "icono": "mdi:shield-airplane"
+                    },
+                    {
+                        "nombre": "Ingeniería de Ductos",
+                        "descripcion": "Fabricación e instalación de ductos personalizados para garantizar un flujo de aire óptimo y duradero.",
+                        "icono": "mdi:pipe"
+                    },
+                    {
+                        "nombre": "Mantenimiento Especializado",
+                        "descripcion": "Planes preventivos y correctivos para asegurar el rendimiento continuo y prolongar la vida útil de sus activos.",
+                        "icono": "mdi:tools"
+                    }
+                ]
+            }
+        },
+        {
+            "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/CamaraFrigorificas.webp",
+            "titulo": "Servicio especial de cámara frigorífica",
+            "contenido": "Soluciones integrales de refrigeración industrial y comercial diseñadas para maximizar la eficiencia y confiabilidad en la conservación de productos.",
+            "url": "/servicio-especial-camara-frigorifica",
+            "slug": "servicio-especial-camara-frigorifica",
+            "descripcion_larga": "En Teknisolutions, nos especializamos en ofrecer soluciones integrales de refrigeración industrial y comercial, diseñadas para maximizar la eficiencia y confiabilidad en la conservación de sus productos. Proporcionamos un servicio completo que abarca desde el diseño técnico hasta la instalación de infraestructura de alta precisión.",
+            "icono": "mdi:clipboard-check",
+            "secciones": [
+                {
+                    "titulo": "Soluciones Especializadas por Sector",
+                    "contenido": "Colaboramos estrechamente con contratistas y usuarios finales en diversos sectores estratégicos, adaptándonos a las exigencias de cada industria:",
+                    "items": [
+                        {
+                            "titulo": "Retail y Horeca",
+                            "descripcion": "Sistemas especializados para la conservación de flores y productos perecederos."
+                        },
+                        {
+                            "titulo": "Procesamiento",
+                            "descripcion": "Equipamiento para plantas industriales de alimentos y centros de distribución."
+                        },
+                        {
+                            "titulo": "Industria Farmacéutica",
+                            "descripcion": "Diseño de almacenes especializados para medicamentos, cámaras de frío con monitoreo térmico y sistemas de climatización para laboratorios bajo estrictos estándares de bioseguridad."
+                        },
+                        {
+                            "titulo": "Sector Salud y Hospitalario",
+                            "descripcion": "Climatización de salas de operaciones, unidades de cuidados intensivos y centros médicos con sistemas de filtrado de aire de alta eficiencia."
+                        }
+                    ]
+                }
+            ],
+            "VentilacionClimatizacion": {
+                "titulo": "Sectores de Especialización",
+                "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/Nuestro%20Portafolio%20de%20Servicios.webp",
+                "servicios": [
+                    {
+                        "nombre": "Almacenamiento Térmico",
+                        "descripcion": "Diseño e instalación de cámaras frigoríficas, cámaras de congelación y túneles de congelado rápido.",
+                        "icono": "mdi:fridge-industrial"
+                    },
+                    {
+                        "nombre": "Unidades de Potencia",
+                        "descripcion": "Implementación de sistemas de racks de compresores, unidades condensadoras y sistemas de Chillers.",
+                        "icono": "mdi:engine"
+                    },
+                    {
+                        "nombre": "Componentes Especializados",
+                        "descripcion": "Suministro de paneles aislantes, puertas para cámaras frigoríficas y unidades enfriadoras de aire (evaporadores)",
+                        "icono": "mdi:package-variant-closed"
+                    },
+                    {
+                        "nombre": "Ingeniería de Salas",
+                        "descripcion": "Climatización precisa para salas de procesamiento, garantizando estándares óptimos de higiene y temperatura.",
+                        "icono": "mdi:office-building-cog"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+  "contacto": {
+    "informacion_contacto": {
+      "telefonos": [
+        {
+          "tipo": "Principal",
+          "numero": "+51 912 909 920",
+          "whatsapp": "https://wa.me/51912909920",
+          "descripcion": "Atención general y ventas"
+        }
+      ],
+      "correos": [
+        {
+          "tipo": "General",
+          "email": "servicios@teknisolutions.pe",
+          "descripcion": "Consultas generales"
+        },
+        {
+          "tipo": "Privacidad",
+          "email": "privacidad@tsgroup.pe",
+          "descripcion": "Consultas sobre protección de datos"
+        }
+      ],
+      "direcciones": [
+        {
+          "tipo": "Oficina Principal",
+          "direccion": "JIRON MARÍA JOSÉ DE ARCE 261, SAN MIGUEL",
+          "ciudad": "Lima",
+          "pais": "Perú",
+          "mapa": "https://www.google.com/maps/place/Jr.+Mar%C3%ADa+Jos%C3%A9+de+Arce+261,+Lima+15087/@-12.0808518,-77.093553,17z/data=!3m1!4b1!4m6!3m5!1s0x9105c9709d87e7c3:0xf774936e84aa5580!8m2!3d-12.0808571!4d-77.0909781!16s%2Fg%2F11y3306t0q?entry=ttu&g_ep=EgoyMDI1MTIwOS.0wIKXMDSoASAFQAw%3D%3D",
+          "horario": "Lun-Vie: 9:00 AM - 6:00 PM",
+          "Sabado": "Mediodia"
+        }
+      ]
+    },
+    "redes_sociales": {
+      "facebook": {
+        "nombre": "Facebook",
+        "icono": "mdi:facebook",
+        "url": "https://www.facebook.com/profile.php?id=61582764215863",
+        "usuario": "@TS GROUP",
+        "color": "bg-blue-600"
+      },
+      "tiktok": {
+        "nombre": "TikTok",
+        "icono": "mdi:tiktok",
+        "url": "https://www.tiktok.com/@ts.group.peru?_r=1&_t=ZS-92KnR5t9hyC",
+        "usuario": "@TS GROUP",
+        "color": "bg-black"
+      }
+    },
+    "enlaces_legales": {
+      "terminos_condiciones": "/terminos-condiciones",
+      "politica_privacidad": "/Politicas",
+      "cookies": "/cookies",
+      "reclamaciones": "/Reclamaciones"
+    },
+    "terminos_y_condiciones": {
+      "titulo": "Términos y Condiciones",
+      "subtitulo": "Servicios de Instalación y Mantenimiento",
+      "fecha_actualizacion": "2024-01-01",
+      "contenido": [
+        {
+          "numero": 1,
+          "titulo": "Garantía de Servicios",
+          "texto": "TEKNISOLUTIONS, en adelante LA EMPRESA garantizará los servicios de instalación y mantenimiento correctivo, que realice, así como los productos adquiridos, comprados y/o vendidos, por LA EMPRESA, en conformidad con las condiciones generales que pasan a expresarse y que se dan a conocer a EL CLIENTE, por medio de la presente cotización; en los siguientes términos."
+        },
+        {
+          "numero": 2,
+          "titulo": "Reprogramación de Servicios",
+          "texto": "Si al momento de efectuar el servicio EL CLIENTE no se encuentra en la dirección acordada, o por cualquier motivo no permiten el ingreso, los técnicos esperarán 15 minutos. Pasado este periodo de tiempo, el técnico procederá a retirarse dando por finalizada la atención. Para reprogramar el servicio EL CLIENTE deberá pagar la suma de 25.00 soles."
+        },
+        {
+          "numero": 3,
+          "titulo": "Anulación del Servicio",
+          "texto": "Si EL CLIENTE decide anular el servicio de mantenimiento posterior a la llegada del técnico al lugar de prestación de servicio deberá realizar el pago de 25.00 soles por concepto de movilización a la visita, el cual será descontada del valor del servicio."
+        },
+        {
+          "numero": 4,
+          "titulo": "Preparación del Espacio",
+          "texto": "EL CLIENTE deberá proporcionar el espacio despejado donde se realizará el mantenimiento o la instalación. En caso de que EL CLIENTE haya solicitado una visita técnica previa, el mismo deberá acondicionar el espacio según lo acordado."
+        },
+        {
+          "numero": 5,
+          "titulo": "Vigencia de Garantía",
+          "texto": "La garantía de instalación tendrá una vigencia de 1 año, contados desde la fecha de recepción conforme de la instalación por parte de EL CLIENTE -en caso de no existir tal recepción, el plazo se contará desde la fecha del encargo y pago del servicio-, y cubrirá hasta el monto efectivamente pagado por EL CLIENTE por concepto de instalación adquirida."
+        },
+        {
+          "numero": 6,
+          "titulo": "Alcance de la Garantía",
+          "texto": "La garantía cubre defectos de fabricación y mano de obra en la instalación realizada. No cubre daños causados por mal uso, modificaciones no autorizadas, accidentes, desastres naturales o condiciones ambientales adversas."
+        },
+        {
+          "numero": 7,
+          "titulo": "Procedimiento de Reclamos",
+          "texto": "Para hacer efectiva la garantía, EL CLIENTE deberá notificar por escrito a LA EMPRESA dentro de los 15 días siguientes a la detección del problema, adjuntando la documentación que acredite la instalación realizada y la naturaleza del defecto."
+        },
+        {
+          "numero": 8,
+          "titulo": "Limitación de Responsabilidad",
+          "texto": "LA EMPRESA no será responsable por daños indirectos, pérdida de beneficios, o cualquier otro daño consecuencial que pudiera derivarse del uso o imposibilidad de uso de los equipos instalados."
+        },
+        {
+          "numero": 9,
+          "titulo": "Modificaciones",
+          "texto": "LA EMPRESA se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones entrarán en vigor a partir de su publicación en el sitio web."
+        },
+        {
+          "numero": 10,
+          "titulo": "Legislación Aplicable",
+          "texto": "Estos términos y condiciones se rigen por las leyes de la República del Perú. Cualquier controversia será sometida a la jurisdicción de los tribunales de Lima, Perú."
+        }
+      ]
+    },
+    "whatsapp_botones": [
+      {
+        "tipo": "Consulta General",
+        "numero": "+51 912 909 920",
+        "mensaje": "Hola, me gustaría hacer una consulta",
+        "color": "bg-green-500",
+        "icono": "mdi:whatsapp"
+      },
+      {
+        "tipo": "Soporte Privacidad",
+        "numero": "+51 912 909 920",
+        "mensaje": "Hola, tengo una consulta sobre protección de datos",
+        "color": "bg-blue-500",
+        "icono": "mdi:shield-check"
+      }
+    ],
+    "horarios_atencion": {
+      "general": "Lunes a Viernes: 9:00 AM - 6:00 PM",
+      "soporte_privacy": "Lunes a Viernes: 10:00 AM - 4:00 PM"
+    },
+    "oficial_proteccion_datos": {
+      "nombre": "Oficial de Protección de Datos",
+      "email": "dpo@tsgroup.pe",
+      "responsabilidades": "Gestión de solicitudes ARCO y cumplimiento Ley 29733"
+    }
+  }
+}

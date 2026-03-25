@@ -1,0 +1,478 @@
+{
+  "marcas": [
+    {
+      "id": 1,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/1.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/1.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 2,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/2.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/2.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 3,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/3.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/3.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 4,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/4.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/4.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 5,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/5.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/5.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 6,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/6.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/6.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 7,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/7.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/7.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 8,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/8.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/8.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 9,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/9.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/9.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 10,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/10.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/10.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 11,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/11.jpg",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/11.jpg",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 12,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(42)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(42)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 13,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(41)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(41)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 14,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(40)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(40)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 15,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(39)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(39)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 16,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(38)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(38)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 17,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(38)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(38)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 18,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(33)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(33)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 19,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(32)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(32)-convertido-de-png.webp",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 20,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(30)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(30)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 21,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(29)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(29)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 22,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(27)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(27)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 23,
+      "nombre": "image (32)-convertido-de-png",
+      "logo": "/Empresa/image (32)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 24,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(26)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(26)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 25,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(25)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(25)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 26,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(24)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(24)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 27,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(23)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(23)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 28,
+      "nombre": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(21)-convertido-de-png.webp",
+      "logo": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/image%20(21)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 29,
+      "nombre": "image (39)-convertido-de-png",
+      "logo": "/Empresa/image (39)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 30,
+      "nombre": "image (40)-convertido-de-png",
+      "logo": "/Empresa/image (40)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 31,
+      "nombre": "image (41)-convertido-de-png",
+      "logo": "/Empresa/image (41)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 32,
+      "nombre": "image (42)-convertido-de-png",
+      "logo": "/Empresa/image (42)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 33,
+      "nombre": "image (43)-convertido-de-png",
+      "logo": "/Empresa/image (43)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 34,
+      "nombre": "image (44)-convertido-de-png",
+      "logo": "/Empresa/image (44)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 35,
+      "nombre": "image (45)-convertido-de-png",
+      "logo": "/Empresa/image (45)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 36,
+      "nombre": "image (46)-convertido-de-png",
+      "logo": "/Empresa/image (46)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 37,
+      "nombre": "image (47)-convertido-de-png",
+      "logo": "/Empresa/image (47)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 38,
+      "nombre": "image (48)-convertido-de-png",
+      "logo": "/Empresa/image (48)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 39,
+      "nombre": "image (49)-convertido-de-png",
+      "logo": "/Empresa/image (49)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 40,
+      "nombre": "image (50)-convertido-de-png",
+      "logo": "/Empresa/image (50)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 41,
+      "nombre": "image (51)-convertido-de-png",
+      "logo": "/Empresa/image (51)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 42,
+      "nombre": "image (52)-convertido-de-png",
+      "logo": "/Empresa/image (52)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 43,
+      "nombre": "image (53)-convertido-de-png",
+      "logo": "/Empresa/image (53)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 44,
+      "nombre": "image (55)-convertido-de-png",
+      "logo": "/Empresa/image (55)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 45,
+      "nombre": "image (56)-convertido-de-png",
+      "logo": "/Empresa/image (56)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 46,
+      "nombre": "image (57)-convertido-de-png",
+      "logo": "/Empresa/image (57)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 47,
+      "nombre": "image (58)-convertido-de-png",
+      "logo": "/Empresa/image (58)-convertido-de-png.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 49,
+      "nombre": "image (59)",
+      "logo": "/Empresa/image (59).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 50,
+      "nombre": "image (61)",
+      "logo": "/Empresa/image (61).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 51,
+      "nombre": "image (62)",
+      "logo": "/Empresa/image (62).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 52,
+      "nombre": "image (63)",
+      "logo": "/Empresa/image (63).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 53,
+      "nombre": "image (64)",
+      "logo": "/Empresa/image (64).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 54,
+      "nombre": "image (65)",
+      "logo": "/Empresa/image (65).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 55,
+      "nombre": "image (66)",
+      "logo": "/Empresa/image (66).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 56,
+      "nombre": "image (67)",
+      "logo": "/Empresa/image (67).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 57,
+      "nombre": "image (68)",
+      "logo": "/Empresa/image (68).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 58,
+      "nombre": "image (69)",
+      "logo": "/Empresa/image (69).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 59,
+      "nombre": "image (70)",
+      "logo": "/Empresa/image (70).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 60,
+      "nombre": "image (71)",
+      "logo": "/Empresa/image (71).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image (72)",
+      "logo": "/Empresa/image (72).webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_1_",
+      "logo": "/Empresa/image-_1_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_2_",
+      "logo": "/Empresa/image-_2_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_3_",
+      "logo": "/Empresa/image-_3_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_4_",
+      "logo": "/Empresa/image-_4_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_5_",
+      "logo": "/Empresa/image-_5_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_6_",
+      "logo": "/Empresa/image-_6_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    },
+    {
+      "id": 61,
+      "nombre": "image-_7_",
+      "logo": "/Empresa/image-_7_.webp",
+      "slug": "systemair",
+      "descripcion": "Líder mundial en ventilación y calidad del aire interior"
+    }
+  ],
+  
+  "metadata": {
+    "titulo": "Marcas que confían en nosotros",
+    "descripcion": "Trabajamos con las mejores marcas del sector de climatización y ventilación",
+    "total_marcas": 10
+  }
+}

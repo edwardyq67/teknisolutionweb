@@ -1,0 +1,38 @@
+{
+  "fondos": [
+    "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/Servicio-de-aire-acondicionado-dom%C3%A9stico.webp",
+    "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AIRE-ACONDICIONADO-COMERCIAL-E-INDUSTRIAL.webp",
+    "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/SISTEMAS-DE-CLIMATIZACI%C3%93N.webp",
+    "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/C%C3%81MARAS-FRIGOR%C3%8DFICAS-Y-CUARTOS-FR%C3%8DOS.webp",
+    "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/REFRIGERACI%C3%93N-COMERCIAL-E-INDUSTRIAL.webp",
+    "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AIRE-ACONDICIONADO-DOM%C3%89STICO.webp"
+  ],
+  "titulo": [
+    "SOMOS ESPECIALISTAS EN AIRE ACONDICIONADO",
+    "AIRE ACONDICIONADO COMERCIAL E INDUSTRIAL",
+    "SISTEMAS DE CLIMATIZACIÓN",
+    "CÁMARAS FRIGORÍFICAS Y CUARTOS FRÍOS",
+    "REFRIGERACIÓN COMERCIAL E INDUSTRIAL",
+    "AIRE ACONDICIONADO DOMÉSTICO"
+  ],
+  "descripcion": [
+    "",
+    "Instalación, mantenimiento y reparación de equipos residenciales para confort térmico. Trabajamos con split, inverter, ventana y portátil.",
+    "Soluciones de climatización para negocios y grandes espacios con operación continua. Atendemos split ducto, paquete, rooftop, VRF y sistemas centrales.",
+    "Diseño, instalación y mantenimiento de sistemas integrales de control térmico y ventilación. Incluye chillers, manejadoras de aire, ductos, extractores y BMS.",
+    "Implementación y servicio técnico de sistemas de conservación a temperatura controlada. Trabajamos con cámaras de congelado, refrigeración, paneles isotérmicos y unidades condensadoras.",
+    "Mantenimiento y reparación de equipos para conservación y procesos productivos. Atendemos vitrinas, exhibidoras, túneles de frío, racks, chillers y sistemas de refrigeración industrial."
+  ],
+  "botones": {
+    "contacto": {
+      "texto": "CONTÁCTANOS",
+      "enlace": "/contacto",
+      "estilo": "primary"
+    },
+    "servicios": {
+      "texto": "SERVICIOS",
+      "enlace": "",
+      "estilo": "secondary"
+    }
+  }
+}
