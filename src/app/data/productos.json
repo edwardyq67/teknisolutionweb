@@ -7,169 +7,169 @@
   "productos": [
     {
       "id": 1,
-      "img": "/AireAcodiciondo/aire acondicionado split decorativo piso techo.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/aire%20acondicionado%20split%20decorativo%20piso%20techo.webp",
       "titulo": "Aire acondicionado split decorativo piso techo",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 2,
-      "img": "/AireAcodiciondo/aire acondicionado split ducto.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/aire%20acondicionado%20split%20ducto.webp",
       "titulo": "Aire acondicionado split ducto",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 3,
-      "img": "/AireAcodiciondo/aire acondicionado tipo paquete.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/aire%20acondicionado%20tipo%20paquete.webp",
       "titulo": "Aire acondicionado tipo paquete",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 4,
-      "img": "/AireAcodiciondo/cassette.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/cassette.webp",
       "titulo": "Cassette",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 5,
-      "img": "/AireAcodiciondo/chiller.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/chiller.webp",
       "titulo": "Chiller",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 6,
-      "img": "/AireAcodiciondo/ductos.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/ductos.webp",
       "titulo": "Ductos",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 7,
-      "img": "/AireAcodiciondo/fan coil.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/fan%20coil.webp",
       "titulo": "Fan Coil",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 8,
-      "img": "/AireAcodiciondo/HVAC.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/HVAC.webp",
       "titulo": "HVAC",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 9,
-      "img": "/AireAcodiciondo/MiniSpliPardeFrioCalor.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/MiniSpliPardeFrioCalor.webp",
       "titulo": "Split y minisplit convencional e inverter",
       "categoria": ["Mantenimiento", "Reparación", "Instalación"]
     },
     {
       "id": 10,
-      "img": "/AireAcodiciondo/MultiV.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/MultiV.webp",
       "titulo": "MultiV",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 11,
-      "img": "/AireAcodiciondo/paquete rooftop.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/paquete%20rooftop.webp",
       "titulo": "Paquete rooftop",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 12,
-      "img": "/AireAcodiciondo/SplitParedFrioCalor.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/SplitParedFrioCalor.webp",
       "titulo": "Split Pared Frio/Calor",
       "categoria": ["Mantenimiento", "Reparación", "Instalación"]
     },
     {
       "id": 13,
-      "img": "/AireAcodiciondo/VRF.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/VRF.webp",
       "titulo": "VRF",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 14,
-      "img": "/AireAcodiciondo/VRV.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/AireAcondionado/VRV.webp",
       "titulo": "VRV",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 15,
-      "img": "/RefrigeracionComercialIndustrial/camara frigorifica industrial.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/camara%20frigorifica%20industrial.webp",
       "titulo": "Cámara frigorífica industrial",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 16,
-      "img": "/RefrigeracionComercialIndustrial/camara frigorifica.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/camara%20frigorifica.webp",
       "titulo": "Congelador vertical",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 17,
-      "img": "/RefrigeracionComercialIndustrial/chiller industrial.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/chiller%20industrial.webp",
       "titulo": "Chiller industrial",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 18,
-      "img": "/RefrigeracionComercialIndustrial/congelador horizontal.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/congelador%20horizontal.webp",
       "titulo": "Congelador horizontal",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 19,
-      "img": "/RefrigeracionComercialIndustrial/congelador vertical.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/congelador%20vertical.webp",
       "titulo": "Visicooler",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 20,
-      "img": "/RefrigeracionComercialIndustrial/cuarto frio.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/cuarto%20frio.webp",
       "titulo": "Cuarto frío",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 21,
-      "img": "/RefrigeracionComercialIndustrial/enfriador industrial.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/enfriador%20industrial.webp",
       "titulo": "Enfriador industrial",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 22,
-      "img": "/RefrigeracionComercialIndustrial/exhibidor.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/exhibidor.webp",
       "titulo": "Exhibidor",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 23,
-      "img": "/RefrigeracionComercialIndustrial/hidrocooler.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/hidrocooler.webp",
       "titulo": "Hidrocooler",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 24,
-      "img": "/RefrigeracionComercialIndustrial/maquina de hielo industrial.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/maquina%20de%20hielo%20industrial.webp",
       "titulo": "Máquina de hielo industrial",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 25,
-      "img": "/RefrigeracionComercialIndustrial/maquina de hielo.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/maquina%20de%20hielo.webp",
       "titulo": "Máquina de hielo",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 26,
-      "img": "/RefrigeracionComercialIndustrial/sala de proceso.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/sala%20de%20proceso.webp",
       "titulo": "Sala de proceso",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 27,
-      "img": "/RefrigeracionComercialIndustrial/tunel de enfriamiento.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/tunel%20de%20enfriamiento.webp",
       "titulo": "Túnel de enfriamiento",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     },
     {
       "id": 28,
-      "img": "/RefrigeracionComercialIndustrial/visicooler.webp",
+      "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/RefrigeracionComercialIndustrial/visicooler.webp",
       "titulo": "Visicooler",
       "categoria": ["Mantenimiento", "Reparación", "Instalación", "Desarrollo", "Ejecución de Proyecto"]
     }

@@ -1,5 +1,5 @@
 {
-  "titulo": "Sobre Nosotros",
+  "titulo": "Soluciones Integrales en Climatización y Ventilación",
   "contenido": "Somos una empresa líder en el sector de aire acondicionado y ventilación mecánica especializada en instalación, mantenimiento y reparación de sistemas HVAC para el sector comercial, industrial y residencial.",
   "boton": {
     "texto": "Conoce Nuestra Historia",
@@ -15,7 +15,115 @@
   ],
   "img": "https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/Foto04-casco.webp",
   "sello": {
-    "numero": "",
-    "texto": ""
+    "numero": "15+",
+    "texto": "Años de experiencia"
+  },
+  "mision": {
+    "titulo": "MISIÓN",
+    "descripcion": "Somos una empresa especializada en sistemas de climatización y ventilación, comprometida con brindar soluciones integrales de alta calidad que garantizan el confort térmico y la eficiencia energética de nuestros clientes. Innovamos constantemente en nuestros procesos y tecnología para superar las expectativas del mercado, ofreciendo servicios personalizados con el más alto estándar de calidad, seguridad y responsabilidad ambiental."
+  },
+  "vision": {
+    "titulo": "VISIÓN",
+    "descripcion": "Ser la empresa líder en soluciones HVAC en el mercado nacional, reconocida por nuestra excelencia técnica, innovación tecnológica y compromiso con la sostenibilidad, transformando espacios para hacerlos más confortables, eficientes y saludables."
+  },
+  "serviciosDestacados": [
+    {
+      "titulo": "Aire Acondicionado",
+      "descripcion": "Instalación, mantenimiento y reparación de sistemas de aire acondicionado central, split, cassette, piso-techo y conductos para todo tipo de espacios."
+    },
+    {
+      "titulo": "Ventilación Mecánica",
+      "descripcion": "Sistemas de extracción e inyección de aire, ventilación industrial, campanas extractoras y renovación de aire para ambientes comerciales e industriales."
+    },
+    {
+      "titulo": "Refrigeración Comercial",
+      "descripcion": "Soluciones en refrigeración para supermercados, restaurantes, hoteles y cámaras frigoríficas con tecnología de última generación."
+    },
+    {
+      "titulo": "Mantenimiento Preventivo",
+      "descripcion": "Programas de mantenimiento especializado para garantizar el óptimo funcionamiento, eficiencia energética y prolongar la vida útil de sus equipos."
+    },
+    {
+      "titulo": "Proyectos HVAC a Medida",
+      "descripcion": "Diseño, ingeniería y ejecución de proyectos de climatización y ventilación personalizados según las necesidades específicas de cada cliente."
+    }
+  ],
+  "capacidades": {
+    "titulo": "Nuestra Capacidad Operativa",
+    "items": [
+      "Equipo de ingenieros y técnicos especializados certificados",
+      "Flota propia de vehículos para atención inmediata",
+      "Stock permanente de repuestos y equipos de primeras marcas",
+      "Centro de control y monitoreo de servicios",
+      "Plataforma tecnológica para gestión de mantenimiento preventivo",
+      "Talleres equipados con tecnología de diagnóstico avanzado"
+    ]
+  },
+  "valores": [
+    "Excelencia Técnica",
+    "Innovación",
+    "Compromiso",
+    "Sostenibilidad",
+    "Seguridad"
+  ],
+  "certificaciones": [
+    "Certificaciones en sistemas HVAC de primeras marcas",
+    "Normas de calidad en instalaciones de climatización",
+    "Estándares de eficiencia energética",
+    "Certificación en gestión de calidad ISO",
+    "Certificaciones en seguridad industrial y salud ocupacional"
+  ],
+  "clientes": {
+    "titulo": "Confían en Nosotros",
+    "descripcion": "Más de 1000 clientes satisfechos en los sectores comercial, industrial y residencial"
+  },
+  "datos_adicionales": {
+    "anos_experiencia": 15,
+    "proyectos_ejecutados": 1200,
+    "clientes_activos": 450,
+    "cobertura": "Nacional",
+    "tecnico_certificados": 25,
+    "horas_capacitacion_anual": 500
+  },
+  "tecnologias": [
+    {
+      "nombre": "VRF/VRV",
+      "descripcion": "Sistemas de flujo de refrigerante variable para máxima eficiencia"
+    },
+    {
+      "nombre": "Chillers",
+      "descripcion": "Sistemas de enfriamiento centralizado para grandes proyectos"
+    },
+    {
+      "nombre": "Bomba de Calor",
+      "descripcion": "Sistemas eficientes para calefacción y refrigeración"
+    },
+    {
+      "nombre": "Recuperadores de Calor",
+      "descripcion": "Soluciones para eficiencia energética y renovación de aire"
+    }
+  ],
+  "alianzas": [
+    {
+      "nombre": "Daikin",
+      "logo": "/logos/daikin.png",
+      "descripcion": "Distribuidor autorizado"
+    },
+    {
+      "nombre": "Carrier",
+      "logo": "/logos/carrier.png",
+      "descripcion": "Partner certificado"
+    },
+    {
+      "nombre": "Trane",
+      "logo": "/logos/trane.png",
+      "descripcion": "Instalador especializado"
+    }
+  ],
+  "estadisticas": {
+    "satisfaccion_cliente": "98%",
+    "tiempo_respuesta_promedio": "< 2 horas",
+    "eficiencia_energetica_mejora": "30%",
+    "proyectos_sostenibles": 85
   }
 }

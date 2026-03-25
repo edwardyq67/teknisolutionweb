@@ -1,9 +1,67 @@
 @import "tailwindcss";
-
+html {
+    scroll-behavior: smooth;
+  }
 :root {
   --scrollbar-thumb: #1B5B62;
   --scrollbar-track: #1F2937;
   --scrollbar-width: 6px;
+  
+  /* Variables HSL para colores */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --muted: 220 14.3% 95.9%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  
+  /* Paleta basada en #1B5B62 - Verde Azulado Metálico */
+  --primary-50: 186 56% 95%;
+  --primary-100: 186 56% 85%;
+  --primary-200: 186 56% 75%;
+  --primary-300: 186 56% 65%;
+  --primary-400: 186 56% 55%;
+  --primary-500: 186 56% 45%;  /* #1B5B62 - Color principal */
+  --primary-600: 186 56% 35%;
+  --primary-700: 186 56% 28%;
+  --primary-800: 186 56% 22%;
+  --primary-900: 186 56% 16%;
+  --primary-950: 186 56% 10%;
+  
+  --primary: 186 56% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 214.3 31.8% 91.4%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --accent: 214.3 31.8% 91.4%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --ring: 186 56% 45%;
+  --success: 142.1 70.6% 45.3%;
+  --success-foreground: 138.5 76.5% 96.7%;
+  --warning: 24.6 95% 53.1%;
+  --warning-foreground: 33.3 100% 96.5%;
+  --info: 188.7 94.5% 42.7%;
+  --info-foreground: 183.2 100% 96.3%;
+  
+  /* Default scale */
+  --default-50: 186 56% 95%;
+  --default-100: 186 56% 85%;
+  --default-200: 186 56% 75%;
+  --default-300: 186 56% 65%;
+  --default-400: 186 56% 55%;
+  --default-500: 186 56% 45%;
+  --default-600: 186 56% 35%;
+  --default-700: 186 56% 28%;
+  --default-800: 186 56% 22%;
+  --default-900: 186 56% 16%;
+  --default-950: 186 56% 10%;
+  
+  --radius: 0.5rem;
 }
 
 /* Configuración del tema con @theme */
@@ -22,7 +80,7 @@
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1392px;
 
-  /* Colores HSL */
+  /* Colores usando las variables HSL */
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
@@ -39,7 +97,7 @@
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
 
-  /* Primary colors - #1B5B62 */
+  /* Primary colors */
   --color-primary: hsl(var(--primary));
   --color-primary-50: hsl(var(--primary-50));
   --color-primary-100: hsl(var(--primary-100));
@@ -51,7 +109,6 @@
   --color-primary-700: hsl(var(--primary-700));
   --color-primary-800: hsl(var(--primary-800));
   --color-primary-900: hsl(var(--primary-900));
-  --color-primary-950: hsl(var(--primary-950));
   --color-primary-foreground: hsl(var(--primary-foreground));
 
   /* Secondary */
@@ -82,7 +139,7 @@
   --color-info: hsl(var(--info));
   --color-info-foreground: hsl(var(--info-foreground));
 
-  /* Default scale - #1B5B62 */
+  /* Default scale */
   --color-default-50: hsl(var(--default-50));
   --color-default-100: hsl(var(--default-100));
   --color-default-200: hsl(var(--default-200));
@@ -101,80 +158,7 @@
   --radius-sm: calc(var(--radius) - 4px);
 }
 
-/* Variables CSS HSL - Color #1B5B62 */
-:root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
-
-  --muted: 220 14.3% 95.9%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
-
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
-
-  --border: 220 13% 91%;
-  --input: 220 13% 91%;
-
-  /* Paleta basada en #1B5B62 - Verde Azulado Metálico */
-  --primary-50: 186 56% 95%;
-  --primary-100: 186 56% 85%;
-  --primary-200: 186 56% 75%;
-  --primary-300: 186 56% 65%;
-  --primary-400: 186 56% 55%;
-  --primary-500: 186 56% 45%;  /* #1B5B62 - Color principal */
-  --primary-600: 186 56% 35%;
-  --primary-700: 186 56% 28%;
-  --primary-800: 186 56% 22%;
-  --primary-900: 186 56% 16%;
-  --primary-950: 186 56% 10%;
-
-  --primary: 186 56% 45%; /* #1B5B62 */
-  --primary-foreground: 0 0% 100%; /* Blanco */
-
-  --secondary: 214.3 31.8% 91.4%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-
-  --accent: 214.3 31.8% 91.4%;
-  --accent-foreground: 222.2 47.4% 11.2%;
-
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 0 85.7% 97.3%;
-
-  --ring: 186 56% 45%;
-
-  --success: 142.1 70.6% 45.3%;
-  --success-foreground: 138.5 76.5% 96.7%;
-
-  --warning: 24.6 95% 53.1%;
-  --warning-foreground: 33.3 100% 96.5%;
-
-  --info: 188.7 94.5% 42.7%;
-  --info-foreground: 183.2 100% 96.3%;
-
-  --border: 214.3 31.8% 91.4%;
-
-  /* Default scale - #1B5B62 */
-  --default-50: 186 56% 95%;
-  --default-100: 186 56% 85%;
-  --default-200: 186 56% 75%;
-  --default-300: 186 56% 65%;
-  --default-400: 186 56% 55%;
-  --default-500: 186 56% 45%; /* #1B5B62 */
-  --default-600: 186 56% 35%;
-  --default-700: 186 56% 28%;
-  --default-800: 186 56% 22%;
-  --default-900: 186 56% 16%;
-  --default-950: 186 56% 10%;
-  
-  --input: 36 50% 96%;
-
-  --radius: 0.5rem;
-}
-
-/* Efecto metálico opcional para elementos destacados */
+/* Efecto metálico */
 .metallic-effect {
   background: linear-gradient(135deg, 
     hsl(186, 56%, 45%) 0%,
@@ -199,7 +183,7 @@
   }
 }
 
-/* Scrollbar personalizado con el nuevo color */
+/* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: var(--scrollbar-width);
   height: var(--scrollbar-width);
@@ -218,3 +202,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(186, 56%, 55%);
 }
+
+/* Utilidades adicionales */
+.bg-primary-50 {
+  background-color: hsl(var(--primary-50));
+}
+
+.bg-primary-100 {
+  background-color: hsl(var(--primary-100));
+}
+
+/* Agrega más utilidades según necesites */

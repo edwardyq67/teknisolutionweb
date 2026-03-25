@@ -100,12 +100,12 @@ function Header() {
     const baseClasses = "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300";
     return scrollState === 'top'
       ? `${baseClasses} bg-transparent py-4 md:py-6`
-      : `${baseClasses} bg-background/90 backdrop-blur-md shadow-sm py-3 md:py-4 border-b border-border`;
+      : `${baseClasses} bg-black shadow-lg py-3 md:py-4 border-b border-white/10`;
   };
 
   // Determinar color del texto según scroll
   const getTextColor = () => {
-    return scrollState === 'top' ? 'text-white' : 'text-foreground';
+    return scrollState === 'top' ? 'text-white' : 'text-white';
   };
 
   // Verificar si un enlace está activo
@@ -159,9 +159,9 @@ function Header() {
             {/* Logo */}
             <a href="/" className="flex items-center shrink-0">
               <img
-                src="/teknisolution.webp"
+                src="https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/logo/teknisolution.webp"
                 alt="Teknisolutions - Soluciones Integrales"
-                className={`w-auto h-8 transition-all duration-300 ${scrollState === 'top' ? 'brightness-0 invert' : ''}`}
+                className={`w-auto h-8 transition-all duration-300 brightness-0 invert`}
                 loading="eager"
                 decoding="async"
               />
@@ -191,22 +191,22 @@ function Header() {
                       />
                     </svg>
                   </button>
-                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 lg:w-96 rounded-xl bg-card border border-border shadow-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 origin-top z-50">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 lg:w-96 rounded-xl bg-black border border-white/10 shadow-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 origin-top z-50">
                     {servicios.map((servicio, index) => {
                       const IconComponent = getIconForService(servicio.titulo);
                       return (
                         <a
-  key={index}
-  href={`/servicios/${servicio.slug || "#"}`}
-  onClick={closeMobileMenu}
-  className="flex items-center gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-lg hover:bg-muted transition-colors text-foreground"
->
+                          key={index}
+                          href={`/servicios/${servicio.slug || "#"}`}
+                          onClick={closeMobileMenu}
+                          className="flex items-center gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-lg hover:bg-white/10 transition-colors text-white"
+                        >
                           <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover/item:bg-primary/30 transition-colors">
                             <IconComponent className="w-4 h-4 lg:w-5 lg:h-5 text-primary group-hover/item:text-primary transition-colors" />
                           </div>
                           <div className="flex-1">
-                            <span className="text-xs lg:text-sm font-semibold block text-foreground">{servicio.titulo}</span>
-                            <span className="text-xs text-muted-foreground group-hover/item:text-primary transition-colors">
+                            <span className="text-xs lg:text-sm font-semibold block text-white">{servicio.titulo}</span>
+                            <span className="text-xs text-gray-400 group-hover/item:text-primary transition-colors">
                               Ver más →
                             </span>
                           </div>
@@ -238,22 +238,22 @@ function Header() {
 
       {/* Menú móvil overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-md transition-all duration-300 lg:hidden ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 z-40 bg-black/95 backdrop-blur-md transition-all duration-300 lg:hidden ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         onClick={closeMobileMenu}
       >
         <div
-          className={`absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-card shadow-xl transform transition-transform duration-300 flex flex-col ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`absolute right-0 top-0 h-full w-80 max-w-[90vw] bg-black shadow-xl transform transition-transform duration-300 flex flex-col ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header del menú móvil */}
-          <div className="flex-shrink-0 p-4 sm:p-6 border-b border-border">
+          <div className="flex-shrink-0 p-4 sm:p-6 border-b border-white/10">
             <div className="flex justify-between items-center">
-              <span className="text-lg sm:text-xl font-bold text-foreground">Menú</span>
+              <span className="text-lg sm:text-xl font-bold text-white">Menú</span>
               <button
                 onClick={closeMobileMenu}
-                className="p-2 rounded-lg hover:bg-muted text-foreground"
+                className="p-2 rounded-lg hover:bg-white/10 text-white"
                 aria-label="Cerrar menú"
               >
                 <FaTimes className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -282,7 +282,7 @@ function Header() {
                       onClick={closeMobileMenu}
                       className={`flex items-center gap-3 px-3 sm:px-4 py-2 sm:py-3 rounded-lg transition-colors ${isActive
                         ? "bg-primary/20 text-primary"
-                        : "text-foreground hover:bg-muted"
+                        : "text-white hover:bg-white/10"
                         }`}
                     >
                       <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -294,7 +294,7 @@ function Header() {
                 {/* Sección SERVICIOS en móvil */}
                 {!loading && servicios.length > 0 && (
                   <div className="pt-4 sm:pt-6">
-                    <h3 className="font-bold text-foreground mb-3 sm:mb-4 px-3 sm:px-4 flex items-center gap-2 text-sm sm:text-base">
+                    <h3 className="font-bold text-white mb-3 sm:mb-4 px-3 sm:px-4 flex items-center gap-2 text-sm sm:text-base">
                       <FaCog className="w-4 h-4 sm:w-5 sm:h-5" />
                       SERVICIOS
                     </h3>
@@ -305,7 +305,8 @@ function Header() {
                           <a
                             key={index}
                             href={`/servicios/${servicio.slug || "#"}`}
-                            className="flex items-center gap-4 px-4 lg:px-5 py-3 lg:py-4 hover:bg-muted transition-all duration-300 group/item"
+                            onClick={closeMobileMenu}
+                            className="flex items-center gap-4 px-4 lg:px-5 py-3 lg:py-4 hover:bg-white/10 transition-all duration-300 group/item text-white"
                           >
                             <IconComponent className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                             <span className="text-xs sm:text-sm font-medium">{servicio.titulo}</span>

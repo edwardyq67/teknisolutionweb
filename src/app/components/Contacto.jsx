@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -30,6 +30,8 @@ const Contacto = ({ tipo = "General" }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [showTermsModal, setShowTermsModal] = useState(false);
+  const [contactData, setContactData] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -38,66 +40,22 @@ const Contacto = ({ tipo = "General" }) => {
     aceptaTerminos: false
   });
 
-  // Datos de contacto quemados (puedes moverlos a un JSON después)
-  const contactInfo = {
-    telefonos: [
-      {
-        tipo: "WhatsApp",
-        numero: "+51 912 909 920",
-        whatsapp: "https://wa.me/51912909920",
-        descripcion: "Atención inmediata"
-      },
-      {
-        tipo: "Teléfono",
-        numero: "+51 1 123 4567",
-        whatsapp: "tel:+5111234567",
-        descripcion: "Oficina"
+  // Fetch contact data from API
+  useEffect(() => {
+    const fetchContactData = async () => {
+      try {
+        const response = await fetch('/api/contacto');
+        const data = await response.json();
+        setContactData(data.contacto);
+      } catch (error) {
+        console.error('Error fetching contact data:', error);
+      } finally {
+        setLoading(false);
       }
-    ],
-    correos: [
-      {
-        tipo: "Ventas",
-        email: "ventas@teknisolutions.com",
-        descripcion: "Consultas y cotizaciones"
-      },
-      {
-        tipo: "Soporte",
-        email: "soporte@teknisolutions.com",
-        descripcion: "Asistencia técnica"
-      }
-    ],
-    direcciones: [
-      {
-        tipo: "Oficina Principal",
-        direccion: "Av. Javier Prado Este 1234",
-        ciudad: "San Isidro",
-        pais: "Lima, Perú",
-        mapa: "https://maps.google.com/?q=Av.+Javier+Prado+Este+1234+Lima"
-      }
-    ],
-    horarios: {
-      general: "Lunes a Viernes: 9:00 AM - 6:00 PM",
-      sabado: "Sábados: 9:00 AM - 1:00 PM",
-      domingo: "Domingos: Cerrado"
-    },
-    redesSociales: {
-      facebook: {
-        nombre: "Facebook",
-        url: "https://facebook.com/teknisolutions"
-      },
-      instagram: {
-        nombre: "Instagram",
-        url: "https://instagram.com/teknisolutions"
-      },
-      linkedin: {
-        nombre: "LinkedIn",
-        url: "https://linkedin.com/company/teknisolutions"
-      }
-    },
-    whatsappMensaje: {
-      mensaje: `Hola, estoy interesado en obtener información sobre: ${tipo}`
-    }
-  };
+    };
+
+    fetchContactData();
+  }, []);
 
   const socialIcons = {
     facebook: FaFacebook,
@@ -146,25 +104,6 @@ const Contacto = ({ tipo = "General" }) => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    // Simular envío (por ahora solo muestra éxito)
-    setTimeout(() => {
-      console.log('Datos del formulario:', {
-        ...formData,
-        tipo: tipo
-      });
-      setSubmitStatus('success');
-      setFormData({
-        nombre: '',
-        email: '',
-        telefono: '',
-        mensaje: '',
-        aceptaTerminos: false
-      });
-      setIsSubmitting(false);
-    }, 1000);
-
-    // TODO: Cuando tengas la API, descomenta esto:
-    /*
     try {
       const response = await fetch('/api/contacto', {
         method: 'POST',
@@ -195,8 +134,24 @@ const Contacto = ({ tipo = "General" }) => {
     } finally {
       setIsSubmitting(false);
     }
-    */
   };
+
+  // Show loading state while fetching data
+  if (loading) {
+    return (
+      <section id="contacto" className="py-12 sm:py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4 text-center">
+          <div className="animate-pulse">
+            <div className="h-10 bg-gray-200 rounded w-1/3 mx-auto mb-4"></div>
+            <div className="h-6 bg-gray-200 rounded w-1/2 mx-auto"></div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // If no data, don't render
+  if (!contactData) return null;
 
   return (
     <section id="contacto" className="py-12 sm:py-16 lg:py-24 bg-background">
@@ -221,7 +176,7 @@ const Contacto = ({ tipo = "General" }) => {
                   Teléfonos
                 </h3>
                 <div className="space-y-2">
-                  {contactInfo.telefonos.map((telefono, index) => (
+                  {contactData.informacion_contacto?.telefonos?.map((telefono, index) => (
                     <a
                       key={index}
                       href={telefono.whatsapp}
@@ -258,7 +213,7 @@ const Contacto = ({ tipo = "General" }) => {
                   Correos
                 </h3>
                 <div className="space-y-2">
-                  {contactInfo.correos.map((correo, index) => (
+                  {contactData.informacion_contacto?.correos?.map((correo, index) => (
                     <a
                       key={index}
                       href={`mailto:${correo.email}`}
@@ -289,7 +244,7 @@ const Contacto = ({ tipo = "General" }) => {
                 Dirección
               </h3>
               <div className="space-y-3">
-                {contactInfo.direcciones.map((direccion, index) => (
+                {contactData.informacion_contacto?.direcciones?.map((direccion, index) => (
                   <div key={index} className="p-3 hover:bg-muted/30 rounded-xl transition-colors">
                     <div className="flex items-start gap-3">
                       <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -308,6 +263,9 @@ const Contacto = ({ tipo = "General" }) => {
                           <FaMapMarkedAlt />
                           Ver mapa
                         </a>
+                        {direccion.horario && (
+                          <p className="text-xs text-muted-foreground mt-1">{direccion.horario}</p>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -325,24 +283,19 @@ const Contacto = ({ tipo = "General" }) => {
                 <div className="flex items-center justify-between py-1.5">
                   <div className="flex items-center gap-2">
                     <FaCalendarWeek className="text-primary text-sm" />
-                    <span className="text-foreground text-sm">Lunes a Viernes:</span>
+                    <span className="text-foreground text-sm">Horario General:</span>
                   </div>
-                  <span className="text-muted-foreground text-sm">{contactInfo.horarios.general.split(': ')[1]}</span>
+                  <span className="text-muted-foreground text-sm">{contactData.horarios_atencion?.general}</span>
                 </div>
-                <div className="flex items-center justify-between py-1.5">
-                  <div className="flex items-center gap-2">
-                    <FaCalendarWeek className="text-primary text-sm" />
-                    <span className="text-foreground text-sm">Sábados:</span>
+                {contactData.horarios_atencion?.soporte_privacy && (
+                  <div className="flex items-center justify-between py-1.5">
+                    <div className="flex items-center gap-2">
+                      <FaCalendarWeek className="text-primary text-sm" />
+                      <span className="text-foreground text-sm">Soporte Privacidad:</span>
+                    </div>
+                    <span className="text-muted-foreground text-sm">{contactData.horarios_atencion.soporte_privacy}</span>
                   </div>
-                  <span className="text-muted-foreground text-sm">{contactInfo.horarios.sabado.split(': ')[1]}</span>
-                </div>
-                <div className="flex items-center justify-between py-1.5">
-                  <div className="flex items-center gap-2">
-                    <FaCalendarWeek className="text-primary text-sm" />
-                    <span className="text-foreground text-sm">Domingos:</span>
-                  </div>
-                  <span className="text-muted-foreground text-sm">{contactInfo.horarios.domingo.split(': ')[1]}</span>
-                </div>
+                )}
               </div>
             </div>
 
@@ -353,7 +306,7 @@ const Contacto = ({ tipo = "General" }) => {
                 Síguenos
               </h3>
               <div className="flex flex-wrap gap-3">
-                {Object.entries(contactInfo.redesSociales).map(([key, red]) => {
+                {Object.entries(contactData.redes_sociales || {}).map(([key, red]) => {
                   const IconComponent = socialIcons[key];
                   const colorClass = socialColors[key] || 'bg-gray-600 hover:bg-gray-700';
 
@@ -372,15 +325,17 @@ const Contacto = ({ tipo = "General" }) => {
                     </a>
                   );
                 })}
-                <a
-                  href={`https://wa.me/51912909920?text=${encodeURIComponent(contactInfo.whatsappMensaje.mensaje)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-green-600 hover:bg-green-700 flex items-center justify-center transition-all hover:scale-110"
-                  aria-label="WhatsApp"
-                >
-                  <FaWhatsapp className="w-5 h-5 text-white" />
-                </a>
+                {contactData.whatsapp_botones?.[0] && (
+                  <a
+                    href={`https://wa.me/${contactData.whatsapp_botones[0].numero.replace(/\D/g, '')}?text=${encodeURIComponent(contactData.whatsapp_botones[0].mensaje)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-green-600 hover:bg-green-700 flex items-center justify-center transition-all hover:scale-110"
+                    aria-label="WhatsApp"
+                  >
+                    <FaWhatsapp className="w-5 h-5 text-white" />
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -512,7 +467,7 @@ const Contacto = ({ tipo = "General" }) => {
                     </a>
                     {' '}y la{' '}
                     <a
-                      href="/politicas"
+                      href={contactData.enlaces_legales?.politica_privacidad || "/Politicas"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary cursor-pointer hover:underline"
@@ -525,11 +480,10 @@ const Contacto = ({ tipo = "General" }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-3 font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-sm ${
-                    isSubmitting
+                  className={`w-full py-3 font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-sm ${isSubmitting
                       ? 'bg-primary/70 cursor-not-allowed'
                       : 'bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5'
-                  }`}
+                    }`}
                 >
                   {isSubmitting ? (
                     <>
@@ -548,8 +502,6 @@ const Contacto = ({ tipo = "General" }) => {
           </div>
         </div>
       </div>
-
-      {/* Modal de Términos y Condiciones */}
       {showTermsModal && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
@@ -561,7 +513,7 @@ const Contacto = ({ tipo = "General" }) => {
           >
             <div className="flex items-center justify-between p-6 border-b border-border bg-muted/30 sticky top-0">
               <h2 className="text-xl font-bold text-foreground">
-                Términos y Condiciones
+                {contactData.terminos_y_condiciones?.titulo || "Términos y Condiciones"}
               </h2>
               <button
                 onClick={handleCloseTermsModal}
@@ -575,30 +527,26 @@ const Contacto = ({ tipo = "General" }) => {
             <div className="p-6 overflow-y-auto max-h-[70vh]">
               <div className="space-y-4 text-foreground">
                 <div className="mb-6">
-                  <h3 className="text-lg font-bold text-center mb-2">TÉRMINOS Y CONDICIONES</h3>
-                  <p className="text-center text-sm text-muted-foreground mb-4">Servicios de Instalación y Mantenimiento</p>
+                  <h3 className="text-lg font-bold text-center mb-2">
+                    {contactData.terminos_y_condiciones?.titulo || "TÉRMINOS Y CONDICIONES"}
+                  </h3>
+                  <p className="text-center text-sm text-muted-foreground mb-4">
+                    {contactData.terminos_y_condiciones?.subtitulo || "Servicios de Instalación y Mantenimiento"}
+                  </p>
+                  {contactData.terminos_y_condiciones?.fecha_actualizacion && (
+                    <p className="text-center text-xs text-muted-foreground">
+                      Última actualización: {new Date(contactData.terminos_y_condiciones.fecha_actualizacion).toLocaleDateString('es-PE')}
+                    </p>
+                  )}
                 </div>
 
                 <ol className="space-y-6 list-decimal pl-5">
-                  <li className="pl-2">
-                    <span className="font-medium">TEKNISOLUTIONS</span>, en adelante LA EMPRESA garantizará los servicios de instalación y mantenimiento correctivo, que realice, así como los productos adquiridos, comprados y/o vendidos, por LA EMPRESA, en conformidad con las condiciones generales que pasan a expresarse y que se dan a conocer a EL CLIENTE, por medio de la presente cotización; en los siguientes términos.
-                  </li>
-
-                  <li className="pl-2">
-                    Si al momento de efectuar el servicio EL CLIENTE no se encuentra en la dirección acordada, o por cualquier motivo no permiten el ingreso, los técnicos esperarán 15 minutos. Pasado este periodo de tiempo, el técnico procederá a retirarse dando por finalizada la atención. Para reprogramar el servicio EL CLIENTE deberá pagar la suma de 25.00 soles.
-                  </li>
-
-                  <li className="pl-2">
-                    Si EL CLIENTE decide anular el servicio de mantenimiento posterior a la llegada del técnico al lugar de prestación de servicio deberá realizar el pago de 25.00 soles por concepto de movilización a la visita, el cual será descontada del valor del servicio.
-                  </li>
-
-                  <li className="pl-2">
-                    EL CLIENTE deberá proporcionar el espacio despejado donde se realizará el mantenimiento o la instalación. En caso de que EL CLIENTE haya solicitado una visita técnica previa, el mismo deberá acondicionar el espacio según lo acordado.
-                  </li>
-
-                  <li className="pl-2">
-                    <p className="mb-2">La garantía de instalación tendrá una vigencia de 1 año, contados desde la fecha de recepción conforme de la instalación por parte de EL CLIENTE -en caso de no existir tal recepción, el plazo se contará desde la fecha del encargo y pago del servicio-, y cubrirá hasta el monto efectivamente pagado por EL CLIENTE por concepto de instalación adquirida.</p>
-                  </li>
+                  {contactData.terminos_y_condiciones?.contenido?.map((item, index) => (
+                    <li key={index} className="pl-2">
+                      <div className="font-medium mb-1">{item.titulo}</div>
+                      <p className="text-sm text-muted-foreground">{item.texto}</p>
+                    </li>
+                  ))}
                 </ol>
               </div>
             </div>
@@ -609,7 +557,7 @@ const Contacto = ({ tipo = "General" }) => {
                   onClick={handleCloseTermsModal}
                   className="px-6 py-2 bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors text-sm font-medium"
                 >
-                  Cerrar
+                  Aceptar y Cerrar
                 </button>
               </div>
             </div>

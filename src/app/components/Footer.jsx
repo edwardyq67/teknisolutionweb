@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FaWhatsapp,
   FaUser,
@@ -20,12 +20,38 @@ import {
   FaClipboardCheck
 } from 'react-icons/fa';
 import { MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
-import datosNosotros from '../lib/Nosotros.json';
-import ContactoData from '../lib/Contacto.json';
 
 const Footer = () => {
-  const datos = ContactoData.contacto || {};
+  const [contactoData, setContactoData] = useState(null);
+  const [serviciosData, setServiciosData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [showWhatsAppOptions, setShowWhatsAppOptions] = useState(false);
+
+  // Cargar datos desde las APIs
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        
+        // Cargar datos de contacto
+        const contactoResponse = await fetch('/api/contacto');
+        const contactoResult = await contactoResponse.json();
+        setContactoData(contactoResult.contacto);
+        
+        // Cargar datos de servicios
+        const serviciosResponse = await fetch('/api/servicios');
+        const serviciosResult = await serviciosResponse.json();
+        setServiciosData(serviciosResult.servicios || []);
+        
+      } catch (error) {
+        console.error('Error fetching footer data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchData();
+  }, []);
 
   // Mapeo de iconos de servicios
   const getIconForService = (title) => {
@@ -46,14 +72,28 @@ const Footer = () => {
     tiktok: FaTiktok
   };
 
+  // Mostrar loading mientras se cargan los datos
+  if (loading) {
+    return (
+      <footer className="bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-8 relative">
+        <div className="container mx-auto px-4 text-center">
+          <div className="animate-pulse">
+            <div className="h-10 bg-gray-700 rounded w-1/3 mx-auto mb-4"></div>
+            <div className="h-6 bg-gray-700 rounded w-1/2 mx-auto"></div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
+
   // Asegurar que los datos existan
-  const informacionContacto = datos.informacion_contacto || {};
+  const informacionContacto = contactoData?.informacion_contacto || {};
   const telefonos = informacionContacto.telefonos || [];
   const correos = informacionContacto.correos || [];
   const direcciones = informacionContacto.direcciones || [];
-  const redesSociales = datos.redes_sociales || {};
-  const whatsappBotones = datos.whatsapp_botones || [];
-  const servicios = datosNosotros.servicios || [];
+  const redesSociales = contactoData?.redes_sociales || {};
+  const whatsappBotones = contactoData?.whatsapp_botones || [];
+  const servicios = serviciosData || [];
 
   const handleContactClick = (tipo, valor) => {
     console.log('Contact click:', tipo, valor);
@@ -87,7 +127,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <div className="bg-white/10 p-2 rounded-xl">
                   <img
-                    src="/teknisolution.webp"
+                    src="https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/logo/teknisolution.webp"
                     alt="Teknisolutions"
                     className="h-12 w-auto brightness-0 invert"
                   />
@@ -119,6 +159,7 @@ const Footer = () => {
                 })}
               </div>
             </div>
+            
             {/* Columna 2: Servicios Destacados y Horarios */}
             <div className="lg:col-span-5">
               {/* Servicios Destacados */}
@@ -162,7 +203,6 @@ const Footer = () => {
               </div>
             </div>
 
-
             {/* Columna 4: Contacto */}
             <div className="lg:col-span-3">
               <h3 className="text-lg font-semibold mb-5 flex items-center gap-2">
@@ -174,7 +214,7 @@ const Footer = () => {
                 {direcciones.map((direccion, index) => (
                   <a
                     key={index}
-                    href="https://www.google.com/maps/search/Jr.+María+José+de+Arce+261,+Lima+15087"
+                    href={direccion.mapa || "https://www.google.com/maps/search/Jr.+María+José+de+Arce+261,+Lima+15087"}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handleContactClick('direccion', direccion.direccion)}
@@ -237,13 +277,13 @@ const Footer = () => {
 
               <div className="flex flex-wrap gap-4 justify-center">
                 <a
-                  href="/Politicas"
+                  href={contactoData?.enlaces_legales?.politica_privacidad || "/Politicas"}
                   className="text-gray-400 hover:text-white text-sm transition-colors rounded px-3 py-1.5 border border-gray-800 hover:border-gray-700"
                 >
                   Política de Privacidad
                 </a>
                 <a
-                  href="/reclamaciones"
+                  href={contactoData?.enlaces_legales?.reclamaciones || "/Reclamaciones"}
                   className="text-gray-400 hover:text-white text-sm transition-colors rounded px-3 py-1.5 border border-gray-800 hover:border-gray-700"
                 >
                   Libro de Reclamaciones
@@ -313,7 +353,7 @@ const Footer = () => {
                         href={`https://wa.me/${boton.numero.replace(/\D/g, '')}?text=${encodeURIComponent(boton.mensaje || 'Hola, necesito información')}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => handleWhatsAppClick(boton.nombre || 'Asesor', boton.numero)}
+                        onClick={() => handleWhatsAppClick(boton.tipo || 'Asesor', boton.numero)}
                         className="bg-white text-gray-800 p-4 rounded-xl shadow-2xl flex items-center gap-3 hover:bg-gray-50 transition-all duration-300 hover:scale-105 min-w-[260px] border-l-4 border-green-500 group"
                       >
                         <div className="w-12 h-12 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center flex-shrink-0">
@@ -324,7 +364,7 @@ const Footer = () => {
                         </div>
                         <div className="flex-1 min-w-0">
                           <p className="font-semibold text-gray-800 group-hover:text-green-600 transition-colors">
-                            {boton.nombre || 'Asesor Comercial'}
+                            {boton.tipo || 'Asesor Comercial'}
                           </p>
                           <p className="text-xs text-gray-500">Contacto</p>
                           <p className="text-xs text-gray-400 mt-1 truncate">{boton.numero}</p>

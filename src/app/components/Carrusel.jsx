@@ -103,7 +103,7 @@ const Carrusel = memo(() => {
                   transition={{ duration: 0.2 }}
                 >
                   <img
-                    src={marca.logo || 'https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/teknisolution.webp'}
+                    src={marca.logo || 'https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.devhttps://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/logo/teknisolution.webp'}
                     alt={marca.nombre || `Marca ${index + 1}`}
                     className="w-auto h-12 sm:h-14 md:h-16 lg:h-20 max-w-full object-contain transition-all duration-300 hover:opacity-80 cursor-pointer"
                     title={marca.nombre || marca.slug}
@@ -111,7 +111,7 @@ const Carrusel = memo(() => {
                     decoding="async"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = 'https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/teknisolution.webp';
+                      e.target.src = 'https://pub-6fa3794a145e46dc96c10036dd66ad12.r2.devhttps://pub-6fa3794a145e46dc96c10036dd66ad12.r2.dev/logo/teknisolution.webp';
                     }}
                   />
                 </motion.div>

@@ -21,45 +21,61 @@ import {
   FaBolt,
   FaShieldAlt,
   FaUserMd,
-  FaConciergeBell
+  FaConciergeBell,
+  FaThermometerHalf,
+  FaCheckCircle,
+  FaInfoCircle,
+  FaLeaf,
+  FaHeartbeat,
+  FaTemperatureHigh,
+  FaWind
 } from 'react-icons/fa';
 import Link from 'next/link';
 import Carrusel from '@/app/components/Carrusel';
 import Productos from '@/app/components/Productos';
 import Contacto from '@/app/components/Contacto';
 
-// Mapeo de iconos
-const getIconByName = (iconName) => {
+// Mapeo de iconos con colores personalizados
+const getIconByName = (iconName, className = "w-5 h-5 sm:w-6 sm:h-6", color = "text-primary") => {
+  const iconProps = { className: `${className} ${color}` };
+  
   const icons = {
-    'mdi:snowflake': <FaSnowflake className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:snowflake-thermometer': <FaSnowflake className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:clipboard-check': <FaClipboardCheck className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:box': <FaBox className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:home': <FaHome className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:hospital': <FaHospital className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:pill': <FaPills className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:food': <FaUtensils className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:briefcase': <FaBriefcase className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:store': <FaStore className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:chef-hat': <FaConciergeBell className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:certificate': <FaCertificate className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:lightning-bolt': <FaBolt className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:shield-check': <FaShieldAlt className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:check': <FaClipboardCheck className="w-5 h-5 sm:w-6 sm:h-6" />,
-    'mdi:information': <FaClipboardCheck className="w-5 h-5 sm:w-6 sm:h-6" />
+    'mdi:snowflake': <FaSnowflake {...iconProps} />,
+    'mdi:snowflake-thermometer': <FaThermometerHalf {...iconProps} />,
+    'mdi:clipboard-check': <FaClipboardCheck {...iconProps} />,
+    'mdi:box': <FaBox {...iconProps} />,
+    'mdi:home': <FaHome {...iconProps} />,
+    'mdi:hospital': <FaHospital {...iconProps} />,
+    'mdi:pill': <FaPills {...iconProps} />,
+    'mdi:food': <FaUtensils {...iconProps} />,
+    'mdi:briefcase': <FaBriefcase {...iconProps} />,
+    'mdi:store': <FaStore {...iconProps} />,
+    'mdi:chef-hat': <FaConciergeBell {...iconProps} />,
+    'mdi:certificate': <FaCertificate {...iconProps} />,
+    'mdi:lightning-bolt': <FaBolt {...iconProps} />,
+    'mdi:shield-check': <FaShieldAlt {...iconProps} />,
+    'mdi:check': <FaCheckCircle {...iconProps} />,
+    'mdi:information': <FaInfoCircle {...iconProps} />,
+    'mdi:leaf': <FaLeaf {...iconProps} />,
+    'mdi:heartbeat': <FaHeartbeat {...iconProps} />,
+    'mdi:temperature-high': <FaTemperatureHigh {...iconProps} />,
+    'mdi:wind': <FaWind {...iconProps} />
   };
-  return icons[iconName] || <FaClipboardCheck className="w-5 h-5 sm:w-6 sm:h-6" />;
+  
+  return icons[iconName] || <FaClipboardCheck {...iconProps} />;
 };
 
 const getIconForSection = (titulo) => {
   if (!titulo) return "mdi:information";
-  if (titulo.includes("Salud") || titulo.includes("Hospitalario")) return "mdi:hospital";
+  if (titulo.includes("Salud") || titulo.includes("Hospitalario")) return "mdi:hospital-building";
   if (titulo.includes("Farmacéutica")) return "mdi:pill";
   if (titulo.includes("Alimentaria") || titulo.includes("Procesamiento")) return "mdi:food";
   if (titulo.includes("Corporativo") || titulo.includes("Comercial")) return "mdi:briefcase";
   if (titulo.includes("Residencial")) return "mdi:home";
   if (titulo.includes("Retail")) return "mdi:store";
   if (titulo.includes("Horeca")) return "mdi:chef-hat";
+  if (titulo.includes("Energía") || titulo.includes("Eficiencia")) return "mdi:lightning-bolt";
+  if (titulo.includes("Calidad") || titulo.includes("Aire")) return "mdi:wind";
   return "mdi:information";
 };
 
@@ -183,9 +199,9 @@ const ServicioDetalle = () => {
               </p>
               
               <div className="space-y-3 sm:space-y-4 mt-6 sm:mt-8">
-                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    {getIconByName('mdi:certificate')}
+                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    {getIconByName('mdi:certificate', "w-4 h-4 sm:w-5 sm:h-5", "text-primary")}
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Experiencia Certificada</h4>
@@ -193,9 +209,9 @@ const ServicioDetalle = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    {getIconByName('mdi:lightning-bolt')}
+                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    {getIconByName('mdi:lightning-bolt', "w-4 h-4 sm:w-5 sm:h-5", "text-primary")}
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Alta Eficiencia Energética</h4>
@@ -203,9 +219,9 @@ const ServicioDetalle = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    {getIconByName('mdi:shield-check')}
+                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors group">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    {getIconByName('mdi:shield-check', "w-4 h-4 sm:w-5 sm:h-5", "text-primary")}
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1 text-sm sm:text-base">Garantía y Seguridad</h4>
@@ -251,15 +267,15 @@ const ServicioDetalle = () => {
 
                 <div className="space-y-4 sm:space-y-6">
                   {servicioEncontrado.DomesticoComercial[0].servicios.map((servicio, index) => (
-                    <div key={index} className="bg-card p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-border">
+                    <div key={index} className="bg-card p-4 sm:p-5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/20 group">
                       <div className="flex items-start gap-3 sm:gap-4">
                         <div className="shrink-0">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                            {getIconByName(servicio.icono || "mdi:check")}
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                            {getIconByName(servicio.icono || "mdi:check", "w-5 h-5 sm:w-6 sm:h-6", "text-primary")}
                           </div>
                         </div>
                         <div>
-                          <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-1 sm:mb-2">
+                          <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-1 sm:mb-2 group-hover:text-primary transition-colors">
                             {servicio.nombre}
                           </h4>
                           <p className="text-sm sm:text-base text-muted-foreground">
@@ -269,18 +285,6 @@ const ServicioDetalle = () => {
                       </div>
                     </div>
                   ))}
-                </div>
-
-                <div className="mt-8 sm:mt-10 p-4 sm:p-6 bg-primary/5 rounded-2xl border border-primary/10">
-                  <div className="flex items-start gap-2 sm:gap-3">
-                    <FaShieldAlt className="w-5 h-5 sm:w-6 sm:h-6 text-primary mt-0.5 sm:mt-1 shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">Nuestro Compromiso</h4>
-                      <p className="text-muted-foreground text-sm sm:text-base">
-                        {servicioEncontrado.DomesticoComercial[0].compromiso}
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -316,11 +320,11 @@ const ServicioDetalle = () => {
               <div className="order-1 lg:order-2">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
                   {servicioEncontrado.VentilacionClimatizacion.servicios.map((servicioVent, index) => (
-                    <div key={index} className="bg-card p-4 sm:p-5 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-2 sm:mb-3">
-                        {getIconByName(servicioVent.icono)}
+                    <div key={index} className="bg-card p-4 sm:p-5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-border hover:border-primary/30 group">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-2 sm:mb-3 group-hover:bg-primary/20 transition-colors">
+                        {getIconByName(servicioVent.icono, "w-5 h-5 sm:w-6 sm:h-6", "text-primary")}
                       </div>
-                      <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">
+                      <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base group-hover:text-primary transition-colors">
                         {servicioVent.nombre}
                       </h4>
                       <p className="text-muted-foreground text-xs sm:text-sm">
@@ -341,6 +345,7 @@ const ServicioDetalle = () => {
           <div className="container px-4 sm:px-6 mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
               <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-primary/10 text-primary rounded-full text-xs sm:text-sm font-medium mb-3 sm:mb-4">
+                <FaInfoCircle className="w-3 h-3 sm:w-4 sm:h-4" />
                 Información Especializada
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6">
@@ -362,15 +367,15 @@ const ServicioDetalle = () => {
                     return (
                       <div 
                         key={idx}
-                        className="flex flex-col md:flex-row items-start gap-4 sm:gap-6 bg-gradient-to-br from-primary-50 to-background rounded-2xl p-6 sm:p-8 md:p-10 border border-primary-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300"
+                        className="flex flex-col md:flex-row items-start gap-4 sm:gap-6 bg-gradient-to-br from-primary-50 to-background rounded-2xl p-6 sm:p-8 md:p-10 border border-primary-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300 group"
                       >
                         <div className="mb-3 md:mb-0">
-                          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary-50 flex items-center justify-center">
-                            {getIconByName(iconName)}
+                          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors">
+                            {getIconByName(iconName, "w-6 h-6 sm:w-7 sm:h-7", "text-primary")}
                           </div>
                         </div>
                         <div>
-                          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3">
+                          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3 group-hover:text-primary transition-colors">
                             {item?.titulo || "Sector especializado"}
                           </h3>
                           <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
@@ -429,8 +434,8 @@ const ServicioDetalle = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                     <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                        {getIconByName(servicioRel.icono)}
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                        {getIconByName(servicioRel.icono, "w-5 h-5 sm:w-6 sm:h-6", "text-white")}
                       </div>
                     </div>
                   </div>
